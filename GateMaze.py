@@ -21,10 +21,21 @@ differentialDrive = DifferentialDrive.get_default_differential_drive()
 #Define functions here
 # We don't have any functions yet but when we do we will write them here
 # Write your code Here
+
+# Waits for the button on the XRP to be pressed
 board.wait_for_button()
 
+# Drives forward 50 cm at 80% power
 differentialDrive.straight(50, (0.8))
+
+# Turns 90 degrees at 80% power
 differentialDrive.turn((90), 0.8)
+
+# Drives forward 25 cm at 80% power
 differentialDrive.straight(25, 0.8)
+
+# Turns -90 degrees at 80% power
 differentialDrive.turn((-90), 0.8)
+
+# Drives forward 50 cm at 80% power
 differentialDrive.straight(50, 0.8)
